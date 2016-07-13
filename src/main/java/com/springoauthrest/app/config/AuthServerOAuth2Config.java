@@ -102,6 +102,8 @@ public class OAuth2AuthorizationServerConfig extends AuthorizationServerConfigur
         final KeyStoreKeyFactory keyStoreKeyFactory = new KeyStoreKeyFactory(new ClassPathResource("mytest.jks"), "mypass".toCharArray());
         converter.setKeyPair(keyStoreKeyFactory.getKeyPair("mytest"));
         return converter;
+
+        
     }
 
     @Bean
